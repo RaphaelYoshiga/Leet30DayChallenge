@@ -20,15 +20,10 @@ func isHappy(n int) bool {
 
 
 func splitAndSum(n int) int {
-	x := []int { }
-	for n > 0 {
-		x = append(x, n % 10)
-		n = n / 10;
-	}
-
 	sum := 0
-	for _, num := range x {
-		sum += num * num;
+	for n > 0 {
+		sum+= (n % 10) * (n % 10);
+		n = n / 10;
 	}
     return sum;
 }
