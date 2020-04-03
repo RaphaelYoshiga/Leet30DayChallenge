@@ -13,11 +13,7 @@ func TestSumManyHappy(t *testing.T) {
     
 	for _, table := range tables {
 
-        print(table.x);
-        
         result := isHappy(table.x)
-        print("\n")
-        print(result)
         if !(result) {
             t.Errorf("%d is a happy number! but it was not", table.x)
          }

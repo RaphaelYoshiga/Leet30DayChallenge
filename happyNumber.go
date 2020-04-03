@@ -3,21 +3,22 @@ package main
 var h map[int]bool = make(map[int]bool) 
 
 func isHappy(n int) bool {
-	
-	current := digitsSum(n);
-	if h[current] && current != 1 {
-		h = make(map[int]bool);
-		return false;
-	}
-	h[current] = true    
+	turtle := n;
+	hare := n;
 
-	if current == 1	{
-		h = make(map[int]bool);
-		return true;
-	}
-	return isHappy(current);
+	for true {
+		turtle = digitsSum(turtle)
+		hare = digitsSum(digitsSum(hare));
+
+		if hare == 1 {
+			return true;
+		} else if turtle == hare {
+			break;
+		}
+    }
+
+	return false;
 }
-
 
 func digitsSum(n int) int {
 	sum := 0
