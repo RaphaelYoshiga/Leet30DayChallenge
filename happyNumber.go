@@ -1,7 +1,5 @@
 package main
 
-var h map[int]bool = make(map[int]bool) 
-
 func isHappy(n int) bool {
 	turtle := n;
 	hare := n;
