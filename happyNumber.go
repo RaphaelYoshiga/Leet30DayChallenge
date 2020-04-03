@@ -33,6 +33,3 @@ func splitAndSum(n int) int {
     return sum;
 }
 
-func main(){
-	
-}
