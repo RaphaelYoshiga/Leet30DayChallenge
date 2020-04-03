@@ -4,7 +4,7 @@ var h map[int]bool = make(map[int]bool)
 
 func isHappy(n int) bool {
 	
-	current := splitAndSum(n);
+	current := digitsSum(n);
 	if h[current] && current != 1 {
 		h = make(map[int]bool);
 		return false;
@@ -19,7 +19,7 @@ func isHappy(n int) bool {
 }
 
 
-func splitAndSum(n int) int {
+func digitsSum(n int) int {
 	sum := 0
 	for n > 0 {
 		sum+= (n % 10) * (n % 10);
