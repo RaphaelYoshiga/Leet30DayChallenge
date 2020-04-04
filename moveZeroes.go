@@ -1,27 +1,22 @@
 package main
 
 func moveZeroes(nums []int) {
-	maxIterations := len(nums) - 1; 
-	for i := 0; i < maxIterations; i++ {
+	l := len(nums); 
+
+	c:=0;
+	for i := 0; i < l; i++ {
 		a:= nums[i];
 
 		if a == 0 {
-			bi := i+ 1;
-			
-			b:= nums[bi];
-
-			for b == 0 {
-				if bi == len(nums) -1{
-					break;
-				}
-				
-				bi++;
-				b = nums[bi]
-			}
-
-			nums[i] = b;
-			nums[bi] = a;
+			c++;			
+		} else { 
+			nums[i - c] = a;
 		}
-		
+	}
+	
+	for c > 0 {
+		nums[l - c] = 0;
+
+		c--;
 	}
 }
