@@ -27,6 +27,3 @@ func takeMax(a int, b int) int{
 	return b;
 }
 
-func main(){
-	print(maxSubArray([]int { -1 } ));
-}
