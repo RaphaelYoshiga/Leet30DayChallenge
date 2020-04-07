@@ -1,5 +1,5 @@
-Don't judge my poor skills at GO =b
+# Leetcode 30-day challenge 
 
-I'm doing the leet code 30-day challenge, making more challenging by doing in GO with zero experience
+https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/
 
-https://leetcode.com
+For making more interesting, I'm going to do the challenge in Go without any previous experience.
