@@ -46,9 +46,6 @@ func (this *MinStack) GetMin() int {
       return this.min;
 }
 
-func main(){
-
-}
 
 
 /**
