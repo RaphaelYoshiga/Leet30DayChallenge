@@ -40,6 +40,4 @@ func abs(n int) int{
 	}
 	return -n;
 }
-func main(){
-	lastStoneWeight( []int {3,7,2});
-}
+
