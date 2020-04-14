@@ -17,13 +17,6 @@ func diameterOfBinaryTree(root *TreeNode) int {
     return diameter;
 }
 
-func max( a int, b int) int{
-	if a > b{
-		return a;
-	}
-	return b;
-}
-
 func deepestNodeAt(node *TreeNode, diameter *int) int{
 	if node == nil{
 		return 0;

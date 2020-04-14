@@ -17,29 +17,27 @@ func findMaxLength(nums []int) int {
 			sum++;
 		}
 		
-		if sum == 0{
-			maxLenght = i + 1 
-		}
-
-		if _, ok := m[sum]; ok {
-            if maxLenght < i - m[sum] {
-				maxLenght = i - m[sum] 
-			}
-		}else{
-			m[sum] = i;
+		switch {
+			case sum == 0:
+				maxLenght = max(maxLenght,i+1)
+				break;
+			case m[sum] > 0:
+				maxLenght = max(maxLenght,  i-m[sum] +1 ) 
+				break;
+			default:
+				m[sum] = i+1;
 		}
 	}
 
 	return maxLenght;
 }
 
-func min(a int, b int) int{
-	if a < b {
-		return a;
-	}
-	return b;
+
+func max(a,b int) int {
+    if a > b {
+        return a
+    }
+    return b
 }
 
-func main(){
-	findMaxLength( []int {0,1,0,0,1});
-}
+func main(){}
