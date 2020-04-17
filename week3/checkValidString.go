@@ -43,8 +43,3 @@ func checkValidString(s string) bool {
 	}
 	return true;
 }
-
-func main(){
-
-	checkValidString("(*)");
-}
