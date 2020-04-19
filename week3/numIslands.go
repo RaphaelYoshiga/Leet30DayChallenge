@@ -30,14 +30,3 @@ func lookAllDirections(x int,y int, grid [][]byte){
 	lookAllDirections(x, y+1, grid);
 }
 
-func main(){
-
-	data := [][]byte{ 
-		{'1','1','1'},
-		{'0','1','0'},
-		{'1','1','1'},
-	};
-
-	r:= numIslands(data);
-	r++;
-}
