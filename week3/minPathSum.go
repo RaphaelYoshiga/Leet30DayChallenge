@@ -43,14 +43,3 @@ func checkPath(x int, y int, grid [][]int, sum int, cells map[Point]int){
 	// checkPath(x, y -1, grid, sum, cells); // Left
 	checkPath(x, y + 1, grid, sum, cells); //Right
 }
-
-func main(){
-
-	data := [][]int{ 
-		{1,2,5},
-		{3,2,1},
-	};
-
-	r:= minPathSum(data);
-	r++;
-}
