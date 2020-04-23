@@ -8,7 +8,7 @@ func subarraySum(nums []int, k int) int {
 	result := 0;
 
 	for _, n:= range nums{
-		sum+= n;
+		sum += n;
 		if m[sum -k] > 0{
 			result+= m[sum -k];
 		}
@@ -19,6 +19,3 @@ func subarraySum(nums []int, k int) int {
 	return result;
 }
 
-func main(){
-	subarraySum([]int { 1, 1, 1, -1}, 2)
-}
