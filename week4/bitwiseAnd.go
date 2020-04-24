@@ -12,7 +12,3 @@ func rangeBitwiseAnd(m int, n int) int {
 		
 	return bitwise;
 }
-
-func main(){
-	rangeBitwiseAnd(1, 2)
-}
