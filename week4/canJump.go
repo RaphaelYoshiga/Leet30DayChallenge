@@ -12,8 +12,3 @@ func canJump(nums []int) bool {
 	
 	return lastGoodIndex == 0;
 }
-
-func main(){
-
-	canJump([]int {2, 5, 0, 0});
-}

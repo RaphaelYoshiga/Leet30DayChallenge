@@ -62,6 +62,7 @@ func TestLruCacheAnotherScenario(t *testing.T) {
 	
 	getAndAssert(t, &obj, 1, -1);
 	getAndAssert(t, &obj, 2, 3);
+	getAndAssert(t, &obj, 4, 1);
 }
 
 func getAndAssert(t *testing.T, cache *LRUCache, key int, expected int){
