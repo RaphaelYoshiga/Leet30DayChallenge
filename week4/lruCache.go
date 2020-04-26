@@ -78,21 +78,6 @@ func (this *LRUCache) Put(key int, value int)  {
 	}
 }
 
-func main(){
-
-	obj := Constructor(2);
-	
-	obj.Get(2);
-	obj.Put(2, 6);
-
-	obj.Get(1);
-	obj.Put(1, 5);
-	obj.Put(1, 2);
-
-	res := obj.Get(1);
-	res++;
-		
-}
 // Previous implementation 
 //func sortUsedQueue(cache *LRUCache, key int){
 // 	found:= false;
