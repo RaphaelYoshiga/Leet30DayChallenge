@@ -20,13 +20,3 @@ func longestCommonSubsequence(a string, b string) int {
 	return dp[len(dp)-1][len(dp[0]) -1]
 }
 
-func max(a int, b int) int{
-	if a > b{
-		return a;
-	}
-	return b;
-}
-
-func main(){
-	longestCommonSubsequence("ab", "bz");
-}
