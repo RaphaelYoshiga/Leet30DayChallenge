@@ -15,7 +15,7 @@ type Node struct{
 	next *Node
 }
 
-func Constructor(capacity int) LRUCache {
+func NewLruCache(capacity int) LRUCache {
 	head:= Node {}
 	tail := Node {};
 

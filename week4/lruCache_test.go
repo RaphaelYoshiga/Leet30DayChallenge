@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func TestLruCache(t *testing.T) {
-	obj := Constructor(2);
+	obj := NewLruCache(2);
 	
 	obj.Put(1, 1);
 	obj.Put(2, 2);
@@ -21,7 +21,7 @@ func TestLruCache(t *testing.T) {
 
 
 func TestLruCacheAnotherScenario2(t *testing.T) {
-	obj := Constructor(2);
+	obj := NewLruCache(2);
 	
 	obj.Get(2);
 	obj.Put(2, 6);
@@ -36,7 +36,7 @@ func TestLruCacheAnotherScenario2(t *testing.T) {
 
 
 func TestLruCacheAnotherScenario3(t *testing.T) {
-	obj := Constructor(2);
+	obj := NewLruCache(2);
 	
 	obj.Put(1, 1);
 	obj.Put(2, 2);
@@ -53,7 +53,7 @@ func TestLruCacheAnotherScenario3(t *testing.T) {
 }
 
 func TestLruCacheAnotherScenario(t *testing.T) {
-	obj := Constructor(2);
+	obj := NewLruCache(2);
 	
 	obj.Put(2, 1);
 	obj.Put(1, 1);
