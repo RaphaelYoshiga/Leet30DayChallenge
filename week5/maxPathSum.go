@@ -24,7 +24,6 @@ func deepestNodeAt(node *TreeNode, maxVal *int) int{
 	l :=max(deepestNodeAt(node.Left, maxVal), 0);
 	r:= max(deepestNodeAt(node.Right, maxVal), 0);
 
-
 	maxNodeSum := l + r + node.Val
 	*maxVal = max(*maxVal, maxNodeSum);
 	return max(l, r) + node.Val;
